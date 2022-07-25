@@ -557,16 +557,4 @@ much as possible. Create separate source code files for the tasks you handled.
 • Use LATEX to prepare your reports. Include UML diagram showing class hierarchy of
 mysocialbook. Once again, filled and signed declaration form should be first page of
 your report. Reports must not exceed 5 pages in total.
-• Do not miss the deadline.
-• Save your work until the beginning of next semester.
-• The assignment must be original, individual work. Duplicate or very similar
-assignments are both going to be considered as cheating.
-• You will submit your work on CENG1004 course page at https://dys.mu.edu.tr with the file
-hierarchy as below2
-:
-→ <student id>.zip
-→ src.zip3
-→ Report.pdf
-2do not place any file into a directory. Just compress the content files.
-3
-can contain packages.
+
