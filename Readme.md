@@ -447,9 +447,10 @@ Command: REMOVELASTPOST
 Your last post has been successfully removed.
 -----------------------
 Command: SHOWPOSTS adnan
-**************
+'''
+--
 Adnan's Posts
-**************
+--
 1st text post
 Date: 05/08/2021
 Location: 32.81, 39.2
@@ -468,6 +469,7 @@ Friends tagged in this post: Gizem
 Video: myvideo.avi
 Video duration: 8.0 minutes
 ----------------------
+'''
 -----------------------
 Command: BLOCK demet
 demet has been successfully blocked.
