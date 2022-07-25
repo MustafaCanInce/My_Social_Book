@@ -3,33 +3,44 @@
 ## MIDTERM ASSIGNMENT
 
 ### 1 Overview of the Application
+
 In this assignment, you will develop your social media platform (what we will call it is
 mysocialbook) with very simplified use case
 scenarios. To complete every functionality
 of mysocialbook, please read each of the following lines with a high care.
 ### 2 Application’s Specification
+
 This and the following sections are dedicated
 to clearly review the requirements (or specification) of the system you are going to develop.
 The core components of the system will include:
+
 • users (people having an account of mysocialbook),
+
 • posts (textual or multimedia post shared by users).
+
 You will be given two files separately: the one contains information necessary for creating the
 initial users for the system, while the other contains different commands to test various use
 case scenarios of your application.
 These components are further explained in detail in the following sections.
+
 #### 2.1 Users
 Users refers to the people who only use mysocialbook platform (i.e., they do not have any
 privilege such as admin, system manager, and the like). The properties and behaviors that
 user can have are listed below:
+
 • Every User in the system has a unique userID, a name, a unique username, a password, a date of birth, information about school from which the user graduated,
 a last log-in date, a collection of friends, a collection of blocked users, and a
 collection of posts.
+
 • userIDs should be assigned as integers in order, starting from 1 for the first user that
 is added to the system. These IDs cannot be changed later. A newly added user
 should never get an ID that has been assigned before to some other user, even
 in cases when other users get removed from the system.
+
 • Users’ dates of birth and last log-in dates should be stored as Date variables.
+
 • Users must perform
+
 – Sign in,
 – Sign out,
 – Update their user profile info (name, date of birth, and school graduated),
@@ -44,12 +55,16 @@ in cases when other users get removed from the system.
 – List all users,
 – List blocked friends,
 – List blocked users.
+
 • It is a must for any user to be logged-in in order for her/him to perform any of
 these actions other than sign in.
+
 • You are required to hide sensitive personal user info and implement setter and getter
 methods as necessary.
+
 • mysocialbook platform should begin execution by reading a tab-separated file named
 users.txt. The user’s data will be given as following format:
+
 name<TAB>username<TAB>password<TAB>dateofBirth<TAB>graduatedSchool
 An exemplar for the content of this file is shown below:
 Ahmet ahmet ahmet123 04/25/2001 Meram Anadolu Lisesi
@@ -58,30 +73,40 @@ Zeki zeki zeki01 08/16/1987 Kadıkoy Lisesi
 Gizem gizem gizem1 12/09/1997 Hacettepe ¨Universitesi
 Utku utku utku99 10/06/1999 Bilkent ¨Universitesi
 Hakan hakan hakan81 03/01/1981 Mugla S.K. ¨Universitesi
+
 #### 2.2 Posts
 They can either be a textual or multimedia content shared by users. You are expected to
 design your post classes in a hierarchical structure. The necessary information about posts is
 as follows:
+
 • Posts are categorized as either text posts, image posts, or video posts. But be careful:
 these posts have a textual part in common, and can optionally contain image or
 video (for image and video post categories, respectively!).
+
 • mysocialbook should be designed such that it is open for an integration of any new
 post type (e.g., hypertext posts) that may or may not have a textual part.
 • Every post category must contain a location, a collection of tagged friends, and a
 date when the post originated.
+
 • Location should be implemented as a separate class with the following attributes:
 latitude and longitude (stored as double values).
+
 • The format to display the post itself can change with respect to the post type
 of interest. So, in the case of inclusion a new post type to mysocialbook, designer must
 specify its printing format. You should enforce user who proposes a new post type to
 implement display format of that post.
+
 • Text posts have a text.
+
 • Image posts have the image filename, and the image resolution (width and height
 in pixels).
+
 • Video posts have the video filename, video duration, and a constant attribute
 that specifies the maximum video length in minutes (the maximum allowed video
 duration is 10 minutes).
+
 • Note that you are required to implement setter and getter methods as necessary.
+
 ### 3 Testing Scenarios
 i. Add New User: The system should also be open for adding new users. The program
 should add a if the syntax of the command is as provided below:
@@ -103,9 +128,9 @@ Illustration of execution:
 SHOWPOSTS userName
 adnan does not have any posts yet.
 No such user!
-**************
+--
 adnan’s Posts
-**************
+--
 1st text post
 Date: 04/14/2017
 Location: 39.88, 32.73
