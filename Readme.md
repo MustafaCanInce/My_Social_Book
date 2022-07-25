@@ -125,10 +125,12 @@ REMOVEUSER 1
 User has been successfully removed.
 No such user!
 
-iii. Show Posts: The system should also be able to display users’ posts. The parameter for
+iii. Show Posts: 
+The system should also be able to display users’ posts. The parameter for
 this action is a username.
 SHOWPOSTS<TAB>userName
 Illustration of execution:
+```
 SHOWPOSTS userName
 adnan does not have any posts yet.
 No such user!
@@ -158,6 +160,7 @@ Friends tagged in this post: Utku
 Video: myvideo.avi
 Video duration: 8.0 minutes
 ———————-
+```
 iv. Sign-In: This is the base action for users to perform before they are allowed to interact
 with the system and execute other commands. As in a real application, this evaluator
 takes two parameters that are a username and a password.
