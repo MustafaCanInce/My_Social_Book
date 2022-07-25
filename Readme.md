@@ -108,12 +108,15 @@ duration is 10 minutes).
 • Note that you are required to implement setter and getter methods as necessary.
 
 ### 3 Testing Scenarios
+
 i. Add New User: The system should also be open for adding new users. The program
 should add a if the syntax of the command is as provided below:
+
 ADDUSER<TAB>name<TAB>userName<TAB>password<TAB>dateofBirth<TAB>schoolGraduated
 Illustration of execution:
 ADDUSER Adnan adnan adnan1 01/01/1991 Selcuk Universitesi
 Adnan has been successfully added.
+
 ii. Remove Existing User: The system should also remove an existing user It takes one
 parameter which indicates userID.
 REMOVEUSER<TAB>userID
@@ -121,6 +124,7 @@ Illustration of execution:
 REMOVEUSER 1
 User has been successfully removed.
 No such user!
+
 iii. Show Posts: The system should also be able to display users’ posts. The parameter for
 this action is a username.
 SHOWPOSTS<TAB>userName
